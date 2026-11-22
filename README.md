@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# 🍽️ Tasty Kitchens – Food Ordering Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive food ordering web application built using React. Users can explore restaurants, browse menus, sort restaurants by ratings, add food items to their cart, manage quantities and view their order total.
 
-## Available Scripts
+**Developed and customized by Abinayateja**
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+[Visit Tasty Kitchens](https://abinayateja.github.io/TASTY-KITCHENS/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 Application Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Home Page
+Explore promotional offers and popular restaurants.
 
-### `npm test`
+![Home Page](./screenshots/homepage.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Restaurant Listing
+Browse restaurants with cuisine information, ratings and pagination.
 
-### `npm run build`
+![Restaurant Listing](./screenshots/restaurant-listing.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Restaurant Sorting
+Sort restaurants by lowest or highest rating.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Sorting Options](./screenshots/sorting-options.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 4. Shopping Cart
+Manage food quantities, remove items and view the order total.
 
-### `npm run eject`
+![Shopping Cart](./screenshots/shopping-cart.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✨ Key Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- User authentication using API integration.
+- JWT-based authentication and protected routes.
+- Restaurant listing with dynamic API data.
+- Promotional offers displayed in a carousel.
+- Restaurant sorting by ratings.
+- Pagination for restaurant listings.
+- Restaurant and food menu browsing.
+- Add food items to the shopping cart.
+- Increase and decrease item quantities.
+- Remove items from the cart.
+- Automatic order total calculation.
+- Persistent cart data using LocalStorage.
+- Responsive user interface.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend development |
+| JavaScript (ES6+) | Application logic |
+| HTML5 | Structure |
+| CSS3 | Styling and responsiveness |
+| React Router DOM | Client-side routing |
+| React Context API | Shared cart state |
+| REST APIs | Restaurant and authentication data |
+| Fetch API | HTTP requests |
+| LocalStorage | Cart persistence |
+| js-cookie | JWT cookie management |
+| Material UI | UI components and pagination |
+| React Slick | Promotional carousel |
+| React Icons | Icons |
 
-## Learn More
+## 🏗️ Application Architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Login:** Handles user authentication and JWT token storage.
+- **Protected Routes:** Restricts access to authenticated users.
+- **Home:** Displays promotional offers and restaurant listings.
+- **Restaurant Details:** Displays restaurant menu information.
+- **Cart:** Manages selected food items and order totals.
+- **Context API:** Shares cart information across components.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Installation and Setup
 
-### Code Splitting
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/Abinayateja/TASTY-KITCHENS.git
+```
 
-### Analyzing the Bundle Size
+Navigate to the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd TASTY-KITCHENS
+```
 
-### Making a Progressive Web App
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+Open:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```text
+http://localhost:3000
+```
 
-### `npm run build` fails to minify
+Build for production:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run build
+```
+
+## 🔌 API Integration
+
+The application integrates with external CCBP APIs for authentication, promotional offers, restaurant listings and related restaurant data.
+
+The authentication flow uses a JWT token stored in a browser cookie.
+
+**Note:** The application depends on the availability of the external API service.
+
+## 👨‍💻 Author
+
+**Abinayateja**
+
+- GitHub: [@Abinayateja](https://github.com/Abinayateja)
+- Portfolio: [My Portfolio](https://portfolio533.netlify.app/)
+
+This repository documents my learning and customization of a React-based food ordering application. The external API service and original educational project requirements are acknowledged.
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository.
