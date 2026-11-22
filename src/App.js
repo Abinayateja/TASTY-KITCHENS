@@ -52,7 +52,7 @@ class App extends Component {
   render() {
     const {cartItems} = this.state
     return(
-      <BrowserRouter>
+      <BrowserRouter basename="/TASTY-KITCHENS">
         <CartItemsContext.Provider
           value={{
             cartItems, setCartItems: this.setCartItems, updateQuantity: this.updateQunatity
